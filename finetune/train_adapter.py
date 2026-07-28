@@ -206,7 +206,7 @@ def train_one_epoch(model, optimizer, data_loader, device, epoch, args, model_em
     global_step = epoch * len(data_loader)
     data_loader.epoch_ratio=epoch/args.epochs
     header = f"Epoch: [{epoch}]"
-    for i, (imgs, txts, labels,labels2,dialog_len,cap) in enumerate(metric_logger.log_every(data_loader, args.print_freq, header)):
+    for i, (imgs, txts, labels2,dialog_len,cap) in enumerate(metric_logger.log_every(data_loader, args.print_freq, header)):
         start_time = time.time()
         txts = processor(text=txts, padding=True, return_tensors='pt')
         caps=processor(text=cap, padding=True, return_tensors='pt')
