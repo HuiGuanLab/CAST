@@ -79,9 +79,9 @@ class VisDial(VisionDataset):
             text = ', '.join(text)
 
             image = self.transform(image)['pixel_values'][0]
-            labe2=l[dialog_len].strip()
+            label2=l[dialog_len].strip()
 
-            return image, text ,labe2,dialog_len,data['caption']
+            return image, text ,label2,dialog_len,data['caption']
 
     def _check_exists(self) -> bool:
         return os.path.exists(self._data_path) and os.path.isdir(self._data_path)
