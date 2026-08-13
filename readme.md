@@ -14,7 +14,7 @@
 Interactive text-to-image retrieval progressively refines retrieval results through multi-turn interactions with users. CAST introduces a **Context-Aware Dynamic Latent Space Transformation** mechanism that dynamically adapts the retrieval space according to the evolving interaction context.
 
 <p align="center">
-  <img src="readme.assets/image-20260813221950997.png" width="90%">
+  <img src="assets/framework.png" width="90%">
 </p>
 
 ---
