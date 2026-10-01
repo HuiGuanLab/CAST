@@ -1,11 +1,10 @@
 # CAST: Context-Aware Dynamic Latent Space Transformation for Interactive Text-to-Image Retrieval
 
-
-
 ## News
 
 - **2026.02** 🎉 CAST has been accepted to **CVPR 2026**!
 - **2026.08** 🚀 Training and evaluation code released.
+- **2026.10** 📦 Reconstructed dialogue captions and CAST model weights released.
 
 ---
 
@@ -40,6 +39,8 @@ VisDial/
 
 ### Reconstruct Dialogue Captions
 
+The reconstructed dialogue captions used in CAST are generated using **GPT-3.5-Turbo**.
+
 After preparing the datasets, run the following script to generate the reconstructed dialogue captions:
 
 ```bash
@@ -47,6 +48,15 @@ python recon_dialog.py --split train --run_idx 0
 ```
 
 The generated reconstructed captions should be stored in the `dial_recon/` directory and will be used during subsequent training and evaluation.
+
+For convenience and reproducibility, we also release the reconstructed dialogue captions used in our experiments together with the trained CAST model weights:
+
+**Download:** [Reconstructed Dialogue Captions & CAST Model Weights](https://pan.quark.cn/s/f8e96bbfd552)
+
+The released package contains:
+
+- Reconstructed dialogue captions generated using **GPT-3.5-Turbo**
+- Trained **CAST model checkpoints** used for evaluation and reproduction of the reported results
 
 ---
 
@@ -75,7 +85,7 @@ Please also download the required pretrained models, such as **BLIP**, from thei
 Before training, please make sure that:
 
 1. The datasets have been properly prepared.
-2. The reconstructed dialogue captions have been generated using `recon_dialog.py`.
+2. The reconstructed dialogue captions have been generated using `recon_dialog.py` or downloaded from the released resources above.
 3. The pretrained BLIP checkpoint is available.
 
 Run multi-GPU finetuning on VisDial with:
@@ -119,9 +129,9 @@ Run the following script to evaluate CAST using reconstructed dialogue captions:
 | `$recon` | Path to the reconstructed dialogue captions |
 | `$finetuned_weights` | Path to the finetuned CAST checkpoint |
 
----
+The released reconstructed dialogue captions and CAST model weights can be downloaded from the link provided above.
 
-## Acknowledgements
+---
 
 ## Acknowledgements
 
@@ -147,6 +157,3 @@ If you find CAST useful for your research, please consider citing our paper:
 
 ---
 
-## License
-
-Please refer to the licenses of the original datasets and pretrained models for their respective terms of use.
