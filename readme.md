@@ -4,7 +4,6 @@
 
 - **2026.02** 🎉 CAST has been accepted to **CVPR 2026**!
 - **2026.08** 🚀 Training and evaluation code released.
-- **2026.10** 📦 Reconstructed dialogue captions and CAST model weights released.
 
 ---
 
