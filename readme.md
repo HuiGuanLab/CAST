@@ -50,7 +50,7 @@ The generated reconstructed captions should be stored in the `dial_recon/` direc
 
 For convenience and reproducibility, we also release the reconstructed dialogue captions used in our experiments together with the trained CAST model weights:
 
-**Download:** [Reconstructed Dialogue Captions & CAST Model Weights](https://pan.quark.cn/s/f8e96bbfd552)
+**Download:** [Reconstructed Dialogue Captions & CAST Model Weights]([https://pan.quark.cn/s/f8e96bbfd552](https://drive.google.com/drive/folders/1Ql3LUKMtMioGT9lrN4MdU0eoLv4BEl8r?usp=drive_link))
 
 The released package contains:
 
